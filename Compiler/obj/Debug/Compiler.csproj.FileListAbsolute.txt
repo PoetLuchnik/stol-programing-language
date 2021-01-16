@@ -1,0 +1,7 @@
+E:\Projects\Software\STOL\Compiler\obj\Debug\Compiler.csprojAssemblyReference.cache
+E:\Projects\Software\STOL\Compiler\obj\Debug\Compiler.csproj.CoreCompileInputs.cache
+E:\Projects\Software\STOL\Compiler\bin\Debug\STOL-64.exe.config
+E:\Projects\Software\STOL\Compiler\bin\Debug\STOL-64.exe
+E:\Projects\Software\STOL\Compiler\bin\Debug\STOL-64.pdb
+E:\Projects\Software\STOL\Compiler\obj\Debug\STOL-64.exe
+E:\Projects\Software\STOL\Compiler\obj\Debug\STOL-64.pdb

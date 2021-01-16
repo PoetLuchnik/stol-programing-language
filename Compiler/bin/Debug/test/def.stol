@@ -1,0 +1,7 @@
+.define Hi output "Hello, World!!!"
+
+.entrypoint :MAIN
+proc :MAIN
+{
+	Hi
+}
