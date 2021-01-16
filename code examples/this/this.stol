@@ -1,0 +1,15 @@
+.append "std\\io.stol"
+
+proc :++
+{
+	add 1;
+}
+
+proc :main
+{
+	byte b is 5;
+	this b :++;
+	output "Result: ";
+	:io.putb b;
+	input;
+}

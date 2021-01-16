@@ -1,0 +1,18 @@
+.append "std\\condition.stol"
+
+.entrypoint :mine
+proc :mine
+{
+	byte n is 6;
+	
+	push n :== 5 if pop
+	{
+		output "n == 5";
+	}
+	else
+	{
+		output "n != 5";
+	}
+	
+	input;
+}

@@ -1,0 +1,16 @@
+.append "std\\io.stol"
+
+.entrypoint :main
+proc :main
+{
+	byte i is 255;
+	
+	while i 
+	{
+		:io.putb i;
+		output '\n';
+		dec i;
+	}
+	
+	input;
+}

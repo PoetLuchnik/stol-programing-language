@@ -1,0 +1,20 @@
+.append "std\\condition.stol"
+|по сути подстановка|
+.define $IF push
+.define $THEN if pop
+
+.entrypoint :MAIN
+proc :MAIN
+{
+	byte c is false;
+	while true
+	{
+		input c;
+		output c;
+	|  push c :== 13 if pop  |
+		$IF c :== 13 $THEN
+		{
+			stop;
+		}
+	}
+}

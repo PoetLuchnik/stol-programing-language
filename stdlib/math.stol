@@ -1,0 +1,15 @@
+|factorial|
+proc :math.fact A
+{
+	byte B is A sub 1;
+	
+	if B
+	{
+		:math.fact B;
+		pop B;
+		this A mul B;
+		push A stop;
+	}
+	
+	push 1;
+}

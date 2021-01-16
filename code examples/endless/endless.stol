@@ -1,0 +1,15 @@
+.append "std\\condition.stol"
+.entrypoint :mein
+proc :mein
+{
+	byte c is false;
+	while true
+	{
+		input c;
+		output c;
+		push c :== 13 if pop
+		{
+			stop;
+		}
+	}
+}

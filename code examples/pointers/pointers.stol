@@ -1,0 +1,17 @@
+.append "std\\io.stol"
+proc :const* x y z
+{
+	push x y z pop*;
+}
+proc :main
+{
+	byte a is 3;
+	byte b is 4;
+	byte c is 5;
+	
+	:const* 1 0 0 add 10;
+
+	output "Result: ";
+	:io.putb b;
+	input;
+}

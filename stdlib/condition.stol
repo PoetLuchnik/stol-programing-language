@@ -1,0 +1,12 @@
+proc :== a b
+{
+	this a sub b;
+	not a;
+	push a;
+}
+
+proc :!= a b
+{
+	this a sub b;
+	push a;
+}

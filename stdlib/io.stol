@@ -1,0 +1,55 @@
+.define $CHAR_0 48
+|input byte (3 digits)|
+proc :io.getb
+{
+	byte r, i;
+	
+	input i output i;
+	this i sub $CHAR_0 mul 100;
+	this r add i;
+	
+	input i output i;
+	this i sub $CHAR_0 mul 10;
+	this r add i;
+	
+	input i output i;
+	this i sub $CHAR_0;
+	this r add i;
+	
+	push r;
+}
+|output byte as number|
+proc :io.outb n
+{
+	byte d is n div 100 add $CHAR_0;
+	output d;
+	is n mod 100 div 10 add $CHAR_0;
+	output d;
+	is n mod 10 add $CHAR_0;
+	output d;
+}
+|output byte as number without nulls|
+proc :io.putb n
+{
+	byte d is n div 100;
+	if d 
+	{
+		add $CHAR_0;
+		output d;
+		is n mod 100 div 10 add $CHAR_0;
+		output d;
+		is n mod 10 add $CHAR_0;
+		output d;
+	} 
+	else 
+	{
+		is n mod 100 div 10;
+		if d 
+		{
+			add $CHAR_0;
+			output d;
+		}
+		is n mod 10 add $CHAR_0;
+		output d;
+	}
+}

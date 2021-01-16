@@ -1,0 +1,15 @@
+.append "std\\io.stol"
+
+proc :main
+{
+	byte b;
+	:io.getb;
+	pop b;
+	this b sub 42;
+	not b;
+	if b
+	{
+		output "done!";
+	}
+	input;
+}

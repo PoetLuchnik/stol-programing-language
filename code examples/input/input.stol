@@ -1,0 +1,13 @@
+.append "std\\condition.stol"
+.entrypoint :moon
+proc :moon
+{
+	byte i is 255;
+	push 1;
+	while pop
+	{
+		input i;
+		output i;
+		push i :!= 13;
+	}
+}

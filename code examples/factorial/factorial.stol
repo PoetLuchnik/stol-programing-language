@@ -1,0 +1,12 @@
+.append "std\\io.stol"
+.append "std\\math.stol"
+|комментарий|
+.entrypoint :main
+proc :main
+{
+	byte result;
+	:math.fact 5;
+	pop result;
+	:io.outb result;
+	input;
+}

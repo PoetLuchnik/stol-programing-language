@@ -1,0 +1,50 @@
+proc :fillrect a b c
+{
+	|изи|
+	byte tmp;
+	while b
+	{
+		this tmp is a;
+		while tmp
+		{
+			output c;
+			dec tmp;
+		}
+		output '\n';
+		dec b;
+	}
+}
+
+proc :rect a b c
+{
+	|не изи|
+	|open line|
+	byte x is a;
+	while x { output c; dec x; }
+	output '\n';
+	|body lines|
+	this b sub 2;
+	while b 
+	{
+		|empty line|
+		this x is a sub 2;
+		output c;
+		while x { output ' '; dec x; }
+		output c;
+		output '\n';
+		dec b;
+	}
+	|end line|
+	this x is a;
+	while x { output c; dec x; }
+	output '\n';
+}
+
+.entrypoint :main
+proc :main
+{
+	:fillrect 5, 4, '#';
+	output '\n';
+	:rect 5, 4, '#';
+	input;
+}
